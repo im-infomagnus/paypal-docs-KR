@@ -9,7 +9,7 @@
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm install; chmod 777 /home/codespace",
 
   // Use 'postAttachCommand' to run commands when attaching to the container.
   "postAttachCommand": {
