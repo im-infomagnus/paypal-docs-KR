@@ -1,9 +1,9 @@
 {
-    "name": "Ruby Heroes",
-    "workspaceFolder": "/workspaces/educationy/lessons/ruby",
-    "customizations": {
-        "codespaces": {
-          "openFiles": ["README.md"]
-        }
+  "name": "Ruby Heroes",
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/ruby/",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
     }
+  }
 }

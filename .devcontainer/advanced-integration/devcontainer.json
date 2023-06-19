@@ -1,6 +1,6 @@
 {
   "name": "Talking to Advanced integration",
-  "workspaceFolder": "/workspaces/PAYPAL-DOCS-KR/lessons/advanced-integration",
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "secrets": {
     "CHAT_GPT_API_KEY": {
       "description": "This course requires your CHAT_GPT_API_KEY to function properly.",
