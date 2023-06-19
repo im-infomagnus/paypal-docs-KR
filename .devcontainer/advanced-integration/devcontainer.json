@@ -5,7 +5,7 @@
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
 
   // Use 'onCreateCommand' to run commands when creating the container.
-  "onCreateCommand": "./lessons/advanced-integration/welcome-message.sh",
+  "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "npm install",
