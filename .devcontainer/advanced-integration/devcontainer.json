@@ -1,7 +1,7 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
   "name": "Advanced Integration",
-  "remoteUser": "vscode",
+  "remoteUser": "root",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
 
