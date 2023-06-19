@@ -2,7 +2,7 @@
 {
   "name": "Advanced Integration",
   "remoteUser": "root",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:2",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
 
   // Use 'onCreateCommand' to run commands when creating the container.
