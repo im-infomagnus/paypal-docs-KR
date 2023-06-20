@@ -2,7 +2,7 @@
   "name": "Advanced Integration", 
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
-  "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
+  "onCreateCommand": "../../paypal-docs-KR/lessons/advanced-integration/welcome-message.sh",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
