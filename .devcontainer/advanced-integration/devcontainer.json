@@ -1,10 +1,7 @@
-// For more details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Advanced Integration",
-  "remoteUser": "KalpanaRedddyC",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "Advanced Integration",  
+  "image": "mcr.microsoft.com/devcontainers/universal:2-focal",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
-
   // Use 'onCreateCommand' to run commands when creating the container.
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
 
