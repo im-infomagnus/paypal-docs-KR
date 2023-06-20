@@ -3,8 +3,8 @@
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
   "onCreateCommand": 
-   ["chmod +x welcome-message.sh",
-    "../../lessons/advanced-integration/welcome-message.sh"],  
+   ["chmod +x ./lessons/advanced-integration/welcome-message.sh",
+    "./lessons/advanced-integration/welcome-message.sh"],  
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
