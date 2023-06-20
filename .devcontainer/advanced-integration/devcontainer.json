@@ -1,6 +1,7 @@
 {
-  "name": "Advanced Integration",  
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "name": "Advanced Integration", 
+  "remoteUser": "vscode", 
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
   // Use 'onCreateCommand' to run commands when creating the container.
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
