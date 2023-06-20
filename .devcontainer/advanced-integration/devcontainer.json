@@ -3,13 +3,10 @@
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
-
   "postCreateCommand": "npm install",
-
   "postAttachCommand": {
     "Start server": "npm start"
   },
-
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
