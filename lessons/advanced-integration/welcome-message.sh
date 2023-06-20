@@ -2,22 +2,28 @@
 
 set -e
 
-WELCOME_MESSAGE="
-👋 Welcome to the \"Checkout Advanced Integration Example\"
+# Load the variable values from devcontainer.json
+greeting=$(jq -r '.secrets.CLIENT_ID' < devcontainer.json)
+target=$(jq -r '.secrets.APP_SECRET' < devcontainer.json)
 
-🛠️  Your environment is fully setup with all the required software.
+echo \"${greeting}\
 
-🚀 Once you rename the \".env.example\" file to \".env\" and update \"CLIENT_ID\" and \"APP_SECRET\", the checkout page will automatically open in the browser after the server is restarted."
+# WELCOME_MESSAGE="
+# 👋 Welcome to the \"Checkout Advanced Integration Example\"
 
-ALTERNATE_WELCOME_MESSAGE="
-👋 Welcome to the \"Checkout Advanced Integration Example\"
+# 🛠️  Your environment is fully setup with all the required software.
 
-🛠️  Your environment is fully setup with all the required software.
+# 🚀 Once you rename the \".env.example\" file to \".env\" and update \"CLIENT_ID\" and \"APP_SECRET\", the checkout page will automatically open in the browser after the server is restarted."
 
-🚀 The checkout page will automatically open in the browser after the server is started."
+# ALTERNATE_WELCOME_MESSAGE="
+# 👋 Welcome to the \"Checkout Advanced Integration Example\"
 
-if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
-    WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}"
-fi
+# 🛠️  Your environment is fully setup with all the required software.
+
+# 🚀 The checkout page will automatically open in the browser after the server is started."
+
+# if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
+#     WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}"
+# fi
 
 # sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
