@@ -2,18 +2,14 @@
   "name": "Advanced Integration", 
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
-  // Use 'onCreateCommand' to run commands when creating the container.
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
 
-  // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "npm install",
 
-  // Use 'postAttachCommand' to run commands when attaching to the container.
   "postAttachCommand": {
     "Start server": "npm start"
   },
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
@@ -22,14 +18,8 @@
     }
   },  
   "secrets": {    
-    "CLIENT_ID": {
-      "description": "Sandbox client ID of the application.",
-      "documentationUrl": "https://developer.paypal.com/api/rest/"
-    },
-    "APP_SECRET": {
-      "description": "Sandbox secret of the application.",
-      "documentationUrl": "https://developer.paypal.com/api/rest/"
-    }
+    "CLIENT_ID": "Kalpana",
+    "APP_SECRET": "test"
   },
   "customizations": {
     "vscode": {
