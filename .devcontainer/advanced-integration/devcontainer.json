@@ -1,6 +1,6 @@
 {
   "name": "Advanced Integration", 
-  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration",
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
   // Use 'onCreateCommand' to run commands when creating the container.
   "onCreateCommand": "../../lessons/advanced-integration/welcome-message.sh",
