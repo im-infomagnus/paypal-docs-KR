@@ -6,7 +6,7 @@ Example of what a possible education focussed partner repo could look like.
 
 - **Advanced Integration** - Paypal
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/im-infomagnus/paypal-docs-KR?quickstart=1&devcontainer_path=.devcontainer%2Fadvanced-integration%2Fdevcontainer.json)
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/im-infomagnus/paypal-docs-KR?quickstart=1&devcontainer_path=.devcontainer%2Fadvanced-integration%2Fdevcontainer.json)
 
 - **Javascript 101** - A great course about Javascript.
 
