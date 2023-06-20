@@ -2,7 +2,7 @@
   "name": "Advanced Integration", 
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "dockerfile": "Dockerfile",
-  "onCreateCommand": "../../paypal-docs-KR/lessons/advanced-integration/welcome-message.sh",
+  "onCreateCommand": "../paypal-docs-KR/lessons/advanced-integration/welcome-message.sh",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
@@ -15,14 +15,8 @@
     }
   },  
   "secrets": {    
-    "CLIENT_ID": {
-      "description": "Sandbox client ID of the application.",
-      "documentationUrl": "https://developer.paypal.com/api/rest/"
-    },
-    "APP_SECRET": {
-      "description": "Sandbox secret of the application.",
-      "documentationUrl": "https://developer.paypal.com/api/rest/"
-    }
+    "CLIENT_ID": "Kalpana",
+    "APP_SECRET": "test"
   },
   "customizations": {
     "vscode": {
