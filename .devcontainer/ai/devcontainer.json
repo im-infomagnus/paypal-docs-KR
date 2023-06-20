@@ -1,6 +1,6 @@
 {
     "name": "Talking to Computers",
-    "workspaceFolder": "/workspaces/educationy/lessons/ai",
+    "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/ai/",
     "dockerfile": "Dockerfile",
     "secrets": {
         "CHAT_GPT_API_KEY": {
