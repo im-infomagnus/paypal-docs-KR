@@ -1,6 +1,7 @@
 {
     "name": "Talking to Computers",
     "workspaceFolder": "/workspaces/educationy/lessons/ai",
+    "dockerfile": "Dockerfile",
     "secrets": {
         "CHAT_GPT_API_KEY": {
             "description": "This course requires your CHAT_GPT_API_KEY to function properly.",
