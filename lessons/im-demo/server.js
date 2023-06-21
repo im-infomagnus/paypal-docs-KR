@@ -5,7 +5,7 @@ import fs from 'fs';
 const { PORT = 8888 } = process.env;
 
 // Read the devcontainer.json file
-const devcontainerData = fs.readFileSync('.devcontainer/im-demo/devcontainer.json');
+const devcontainerData = fs.readFileSync('../../.devcontainer/im-demo/devcontainer.json');
 const devcontainerConfig = JSON.parse(devcontainerData);
 
 // Access the desired values from devcontainerConfig
