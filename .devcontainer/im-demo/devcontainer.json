@@ -1,0 +1,28 @@
+{
+  "name": "IM Demo", 
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/im-demo/",
+  "dockerfile": "Dockerfile",
+  "postCreateCommand": "npm install && ../../lessons/im-demo/welcome-message.sh",
+  "postAttachCommand": {
+    "Start server": "npm start"
+  },
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": {
+      "label": "Preview of Advanced Checkout Flow",
+      "onAutoForward": "openBrowserOnce"
+    }
+  },  
+  "secrets": {    
+    "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
+    "APP_SECRET": "YOUR_APP_SECRET_HERE"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["vsls-contrib.codetour"],
+      "settings": {
+        "git.openRepositoryInParentFolders": "always"
+      }
+    }
+  }
+}
