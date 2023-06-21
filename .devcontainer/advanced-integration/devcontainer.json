@@ -14,8 +14,8 @@
     }
   },  
   "secrets": {    
-    "CLIENT_ID": "AfO8JyqOwNtRMq-3X9jr583UkVF10hxeG9Ifku6354w4Xh6eNOSClKl_6lLGi8FEDxseWsDwd9TdmGFG",
-    "APP_SECRET": "EBv2wZGG1L46fHNC7AZJcq_De-OqJrEjRarQeBiLnHBIoILGiNfgphPnxrwMCNIVSj_xpMQed1bHpVMI"
+    "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
+    "APP_SECRET": "YOUR_APP_SECRET_HERE"
   },
   "customizations": {
     "vscode": {
