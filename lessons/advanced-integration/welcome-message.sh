@@ -2,6 +2,8 @@
 
 set -e
 
+echo "Test"
+
 # Load the variable values from devcontainer.json
 CLIENT_ID=$(jq -r '.secrets.CLIENT_ID' < ./.devcontainer/advanced-integration/devcontainer.json)
 APP_SECRET=$(jq -r '.secrets.APP_SECRET' < ./.devcontainer/advanced-integration/devcontainer.json)
