@@ -10,7 +10,7 @@
   "portsAttributes": {
     "8888": {
       "label": "Preview of Advanced Checkout Flow",
-      "onAutoForward": "openBrowserOnce"
+      "onAutoForward": "openPreview"
     }
   },  
   "secrets": {    
