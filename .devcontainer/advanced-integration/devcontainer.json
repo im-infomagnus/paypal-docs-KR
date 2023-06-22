@@ -2,7 +2,7 @@
   "name": "Advanced Integration", 
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "postCreateCommand": "npm install && /bin/sh ../../lessons/advanced-integration/welcome-message.sh $CLIENT_ID,$APP_SECRET",
+  "postCreateCommand": "npm install && /bin/sh ../../lessons/advanced-integration/welcome-message.sh",
   "postAttachCommand": {
     "Start server": "npm start"
   },
