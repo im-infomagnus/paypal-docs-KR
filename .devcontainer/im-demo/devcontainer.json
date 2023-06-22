@@ -1,7 +1,7 @@
 {
   "name": "IM Demo", 
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/im-demo/",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "dockerfile": "Dockerfile",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
