@@ -16,10 +16,9 @@ ALTERNATE_WELCOME_MESSAGE="
 
 🚀 The checkout page will automatically open in the browser after the server is started."
 
-CLIENT_ID=$CLIENT_ID;
 
 if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
-    WELCOME_MESSAGE = "${CLIENT_ID} ${ALTERNATE_WELCOME_MESSAGE}";   
+    WELCOME_MESSAGE = "${ALTERNATE_WELCOME_MESSAGE}";   
 fi
 
 # Path to the output file
