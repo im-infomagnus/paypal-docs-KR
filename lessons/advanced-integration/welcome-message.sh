@@ -16,11 +16,11 @@ ALTERNATE_WELCOME_MESSAGE="
 
 🚀 The checkout page will automatically open in the browser after the server is started."
 
-if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
-    WELCOME_MESSAGE = "Client ID: ${CLIENT_ID}\nApp Secret: ${APP_SECRET}\n\n${ALTERNATE_WELCOME_MESSAGE}";   
-fi
+CLIENT_ID=$CLIENT_ID;
 
-WELCOME_MESSAGE = "Client ID: ${CLIENT_ID}\nApp Secret: ${APP_SECRET}\n\n${WELCOME_MESSAGE}"
+if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
+    WELCOME_MESSAGE = "${CLIENT_ID} ${ALTERNATE_WELCOME_MESSAGE}";   
+fi
 
 # Path to the output file
 output_file="first-run-notice.txt"
