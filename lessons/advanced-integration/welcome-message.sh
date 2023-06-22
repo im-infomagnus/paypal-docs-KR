@@ -20,6 +20,8 @@ if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
     WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}"
 fi
 
+WELCOME_MESSAGE += "\n\n CLIENT_ID: ${CLIENT_ID} \n APP_SECRET: ${APP_SECRET}";
+
 # Path to the output file
 output_file="first-run-notice.txt"
 
