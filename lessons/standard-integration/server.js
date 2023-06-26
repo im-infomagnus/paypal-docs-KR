@@ -13,6 +13,12 @@ app.use(express.json());
 
 app.post("/my-server/create-paypal-order", async (req, res) => {
   try {
+    readFile('./public/index.html', 'utf-8', function (err, contents) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+    })
     const order = await paypal.createOrder();
     res.json(order);
   } catch (err) {
