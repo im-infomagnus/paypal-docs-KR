@@ -26,5 +26,3 @@ output_file="first-run-notice.txt"
 
 # Write the welcome message to the output file
 echo "${WELCOME_MESSAGE}" > "${output_file}"
-
-#sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
