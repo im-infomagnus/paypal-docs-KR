@@ -18,7 +18,7 @@ ALTERNATE_WELCOME_MESSAGE="
 
 
 if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
-    WELCOME_MESSAGE = "${ALTERNATE_WELCOME_MESSAGE}";   
+    WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}";   
 fi
 
 # Path to the output file
@@ -26,5 +26,3 @@ output_file="first-run-notice.txt"
 
 # Write the welcome message to the output file
 echo "${WELCOME_MESSAGE}" > "${output_file}"
-
-#sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
