@@ -6,9 +6,9 @@
   "postAttachCommand": {
     "Start server": "npm start"
   },
-  "forwardPorts": [8888],
+  "forwardPorts": [8889],
   "portsAttributes": {
-    "8888": {
+    "8889": {
       "label": "Preview of Standard Checkout Flow",
       "onAutoForward": "openPreview"
     }
@@ -16,5 +16,13 @@
   "secrets": {    
     "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
     "APP_SECRET": "YOUR_APP_SECRET_HERE"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["vsls-contrib.codetour"],
+      "settings": {
+        "git.openRepositoryInParentFolders": "prompt"
+      }
+    }
   }
 }

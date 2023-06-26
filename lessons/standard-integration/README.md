@@ -9,5 +9,5 @@ This folder contains example code for a standard PayPal integration using both t
 2. Replace `test` in `public/index.html` with your app's client-id
 4. Run `npm install`
 5. Run `npm start`
-6. Open http://localhost:8888
+6. Open http://localhost:8889 in your browser
 7. Click "PayPal" and log in with one of your [Sandbox test accounts](https://developer.paypal.com/dashboard/accounts)
