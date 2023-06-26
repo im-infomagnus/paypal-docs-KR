@@ -1,17 +1,20 @@
-
 {
-	"name": "Standard Integration",
-	"workspaceFolder": "/workspaces/paypal-docs-KR/lessons/standard-integration/",
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"postCreateCommand": "npm install",
-  	"postAttachCommand": {
+  "name": "Standard Integration", 
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/standard-integration/",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": {
     "Start server": "npm start"
   },
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
-      "label": "Preview of Advanced Checkout Flow",
+      "label": "Preview of Standard Checkout Flow",
       "onAutoForward": "openPreview"
     }
+  },  
+  "secrets": {    
+    "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
+    "APP_SECRET": "YOUR_APP_SECRET_HERE"
   }
 }
