@@ -6,7 +6,7 @@
   "postAttachCommand": {
     "Start server": "npm start"
   },
-  "forwardPorts": [8888],
+  "forwardPorts": [8889],
   "portsAttributes": {
     "8888": {
       "label": "Preview of Standard Checkout Flow",
