@@ -8,7 +8,7 @@
   },
   "forwardPorts": [8889],
   "portsAttributes": {
-    "8888": {
+    "8889": {
       "label": "Preview of Standard Checkout Flow",
       "onAutoForward": "openPreview"
     }
