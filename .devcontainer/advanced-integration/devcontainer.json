@@ -1,25 +1,29 @@
 {
-  "name": "Advanced Integration", 
+  "name": "Advanced Integration",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
   },
-  "forwardPorts": [8888],
+  "forwardPorts": [
+    8888
+  ],
   "portsAttributes": {
     "8888": {
       "label": "Preview of Advanced Checkout Flow",
       "onAutoForward": "openPreview"
     }
-  },  
-  "secrets": {    
+  },
+  "secrets": {
     "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
     "APP_SECRET": "YOUR_APP_SECRET_HERE"
   },
   "customizations": {
     "vscode": {
-      "extensions": ["vsls-contrib.codetour"],
+      "extensions": [
+        "vsls-contrib.codetour"
+      ],
       "settings": {
         "git.openRepositoryInParentFolders": "always"
       }
