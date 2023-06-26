@@ -18,7 +18,7 @@ ALTERNATE_WELCOME_MESSAGE="
 
 
 if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
-    WELCOME_MESSAGE = "${ALTERNATE_WELCOME_MESSAGE}";   
+    WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}";   
 fi
 
 # Path to the output file
