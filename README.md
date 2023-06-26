@@ -26,7 +26,7 @@ Refer to [PayPal Developer](https://developer.paypal.com/home) for more info.
 
 **Starndard Checkout**
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/im-infomagnus/paypal-docs-KR?quickstart=1&devcontainer_path=.devcontainer%2Fadvanced-integration%2Fdevcontainer.json)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/im-infomagnus/paypal-docs-KR?quickstart=1&devcontainer_path=.devcontainer%2Fstandard-integration%2Fdevcontainer.json)
 
 **Advanced Checkout**
 
