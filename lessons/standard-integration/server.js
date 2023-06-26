@@ -16,7 +16,7 @@ app.post("/my-server/create-paypal-order", async (req, res) => {
     readFile('./public/index.html', 'utf-8', function (err, contents) {
       if (err) {
         console.log(err);
-        return;
+        //return;
       }
     })
     const order = await paypal.createOrder();
