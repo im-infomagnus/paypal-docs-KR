@@ -1,7 +1,8 @@
+// For more details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Advanced Integration", 
-  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "Advanced Integration",
+    "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/advanced-integration/",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",  
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npm start"
@@ -10,19 +11,11 @@
   "portsAttributes": {
     "8888": {
       "label": "Preview of Advanced Checkout Flow",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openBrowserOnce"
     }
-  },  
-  "secrets": {    
+  },
+ "secrets": {    
     "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
     "APP_SECRET": "YOUR_APP_SECRET_HERE"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": ["vsls-contrib.codetour"],
-      "settings": {
-        "git.openRepositoryInParentFolders": "always"
-      }
-    }
-  }
+  } 
 }
