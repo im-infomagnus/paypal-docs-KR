@@ -1,7 +1,8 @@
 import "dotenv/config"; // loads variables from .env file
 import express from "express";
 import * as paypal from "./paypal-api.js";
-const {PORT = 8888} = process.env;
+const { readFile, writeFile } = require('fs');
+const { PORT = 8888 } = process.env;
 
 const app = express();
 
@@ -31,4 +32,17 @@ app.post("/my-server/capture-paypal-order", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}/`);
+});
+
+readFile('./public/index.html', 'utf-8', function (err, contents) {
+  if (err) {
+    console.log(err);
+    return;
+  }
+
+  const replaced = contents.replace(/test/g, process.env.ClientID);
+
+  writeFile('./public/index.html', replaced, 'utf-8', function (err) {
+    console.log(err);
+  });
 });
