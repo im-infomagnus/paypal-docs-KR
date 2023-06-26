@@ -16,9 +16,15 @@ app.post("/my-server/create-paypal-order", async (req, res) => {
     readFile('./public/index.html', 'utf-8', function (err, contents) {
       if (err) {
         console.log(err);
-        //return;
+        return;
       }
-    })
+      const replaced = contents.replace(/test/g, process.env.CLIENT_ID).replace(/undefined/g, process.env.CLIENT_ID);
+
+      writeFile('./public/index.html', replaced, 'utf-8', function (err) {
+        console.log(err);
+      });
+    });
+
     const order = await paypal.createOrder();
     res.json(order);
   } catch (err) {
@@ -40,14 +46,3 @@ app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}/`);
 });
 
-readFile('./public/index.html', 'utf-8', function (err, contents) {
-  if (err) {
-    console.log(err);
-    return;
-  }
-  const replaced = contents.replace(/test/g, process.env.CLIENT_ID).replace(/undefined/g, process.env.CLIENT_ID);
-
-  writeFile('./public/index.html', replaced, 'utf-8', function (err) {
-    console.log(err);
-  });
-});

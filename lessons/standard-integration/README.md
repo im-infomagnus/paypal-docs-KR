@@ -4,6 +4,14 @@ This folder contains example code for a standard PayPal integration using both t
 
 ## Instructions
 
+### Using GitHub Codespaces
+
+1. The checkout page will automatically open in a new browser window.
+
+
+### Local setup
+
+
 1. [Create an application](https://developer.paypal.com/dashboard/applications/sandbox/create)
 3. Rename `.env.example` to `.env` and update `CLIENT_ID` and `APP_SECRET`
 2. Replace `test` in `public/index.html` with your app's client-id
