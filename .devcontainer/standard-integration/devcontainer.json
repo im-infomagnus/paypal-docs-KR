@@ -16,8 +16,14 @@
     }
   },
   "secrets": {
-    "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
-    "APP_SECRET": "YOUR_APP_SECRET_HERE"
+    "CLIENT_ID": {
+      "description": "Sandbox client ID of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    },
+    "APP_SECRET": {
+      "description": "Sandbox secret of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    }
   },
   "customizations": {
     "vscode": {
