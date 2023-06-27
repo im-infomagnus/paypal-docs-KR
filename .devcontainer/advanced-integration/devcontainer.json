@@ -4,7 +4,7 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
-    "Start server": "npm start"
+    "Start server": "npx kill-port 8888 && npm start"
   },
   "forwardPorts": [
     8888

@@ -1,10 +1,19 @@
 import fetch from "node-fetch";
+import { readFile, writeFile } from "fs";
+
 
 const { CLIENT_ID, APP_SECRET } = process.env;
 const base = "https://api-m.sandbox.paypal.com";
 
 export async function createOrder() {
   const accessToken = await generateAccessToken();
+  UpdateClientId(function (err) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+  });
+
   const url = `${base}/v2/checkout/orders`;
   const response = await fetch(url, {
     method: "post",
@@ -30,6 +39,12 @@ export async function createOrder() {
 
 export async function capturePayment(orderId) {
   const accessToken = await generateAccessToken();
+  UpdateClientId(function (err) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+  });
   const url = `${base}/v2/checkout/orders/${orderId}/capture`;
   const response = await fetch(url, {
     method: "post",
@@ -63,4 +78,30 @@ async function handleResponse(response) {
 
   const errorMessage = await response.text();
   throw new Error(errorMessage);
+}
+
+function UpdateClientId(callback) {
+  const fs = require('fs');
+  const path = require('path');
+
+  const filePath = path.join(__dirname, 'public', 'index.html');
+  const encoding = 'utf-8';
+
+  fs.readFile(filePath, encoding, function (err, contents) {
+    if (err) {
+      console.log(err);
+      return callback(err);
+    }
+
+    const replaced = contents.replace(/test/g, process.env.CLIENT_ID).replace(/undefined/g, process.env.CLIENT_ID);
+
+    fs.writeFile(filePath, replaced, encoding, function (err) {
+      if (err) {
+        console.log(err);
+        return callback(err);
+      }
+
+      callback(null);
+    });
+  });
 }
