@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
-import { readFile, writeFile } from "fs";
+import fs from 'fs';
+import { join } from 'path';
 
 
 const { CLIENT_ID, APP_SECRET } = process.env;
@@ -81,10 +82,7 @@ async function handleResponse(response) {
 }
 
 function UpdateClientId(callback) {
-  const fs = require('fs');
-  const path = require('path');
-
-  const filePath = path.join(__dirname, 'public', 'index.html');
+  const filePath = join(process.cwd(), 'public', 'index.html');
   const encoding = 'utf-8';
 
   fs.readFile(filePath, encoding, function (err, contents) {
@@ -100,7 +98,6 @@ function UpdateClientId(callback) {
         console.log(err);
         return callback(err);
       }
-
       callback(null);
     });
   });
