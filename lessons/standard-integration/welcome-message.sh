@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+#set -e
 
 WELCOME_MESSAGE="
 👋 Welcome to the \"Checkout Advanced Integration Example\"
@@ -16,8 +16,14 @@ ALTERNATE_WELCOME_MESSAGE="
 
 🚀 The checkout page will automatically open in the browser after the server is started."
 
-if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
-    WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}"
+
+if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then    
+    WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}";   
 fi
 
-sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
+# Path to the output file
+# output_file="first-run-notice.txt"
+
+# Write the welcome message to the output file
+#echo "${WELCOME_MESSAGE}" > "${output_file}"
+echo "${WELCOME_MESSAGE}"

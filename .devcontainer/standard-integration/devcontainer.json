@@ -4,7 +4,7 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
-    "Start server": "npx kill-port 8888 && npm start"
+    "Start server": "npx kill-port 8888 && npm start && ./welcome-message.sh"
   },
   "forwardPorts": [
     8889
