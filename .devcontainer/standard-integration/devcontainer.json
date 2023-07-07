@@ -3,8 +3,9 @@
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/standard-integration/",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
+  "onCreateCommand": "chmod +x welcome-message.sh && ./welcome-message.sh",
   "postAttachCommand": {
-    "Start server": "npx kill-port 8889 && chmod +x welcome-message.sh && ./welcome-message.sh && npm start"
+    "Start server": "npx kill-port 8889 && npm start"
   },
   "forwardPorts": [
     8889
