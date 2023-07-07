@@ -1,7 +1,7 @@
 {
   "name": "Standard Integration",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/standard-integration/",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npx kill-port 8888 && npm start"
