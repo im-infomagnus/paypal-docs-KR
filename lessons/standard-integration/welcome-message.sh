@@ -22,8 +22,8 @@ if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
 fi
 
 # Path to the output file
-# output_file="first-run-notice.txt"
+output_file="first-run-notice.txt"
 
 # Write the welcome message to the output file
-#echo "${WELCOME_MESSAGE}" > "${output_file}"
-echo "${WELCOME_MESSAGE}"
+echo "${WELCOME_MESSAGE}" > "${output_file}"
+# echo "${WELCOME_MESSAGE}"
