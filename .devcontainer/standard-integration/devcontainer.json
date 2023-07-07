@@ -1,20 +1,38 @@
 {
-  "name": "Standard Integration", 
+  "name": "Standard Integration",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/standard-integration/",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
-    "Start server": "npm start"
+    "Start server": "npx kill-port 8888 && npm start"
   },
-  "forwardPorts": [8888],
+  "forwardPorts": [
+    8889
+  ],
   "portsAttributes": {
-    "8888": {
+    "8889": {
       "label": "Preview of Standard Checkout Flow",
       "onAutoForward": "openPreview"
     }
-  },  
-  "secrets": {    
-    "CLIENT_ID": "YOUR_CLIENT_GOES_HERE",
-    "APP_SECRET": "YOUR_APP_SECRET_HERE"
+  },
+  "secrets": {
+    "CLIENT_ID": {
+      "description": "Sandbox client ID of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    },
+    "APP_SECRET": {
+      "description": "Sandbox secret of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vsls-contrib.codetour"
+      ],
+      "settings": {
+        "git.openRepositoryInParentFolders": "prompt"
+      }
+    }
   }
 }
