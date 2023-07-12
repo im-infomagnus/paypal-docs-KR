@@ -1,6 +1,6 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Advanced Integration",
+  "name": "Apple Pay",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/apple-pay/",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
@@ -12,7 +12,7 @@
   ],
   "portsAttributes": {
     "8888": {
-      "label": "Preview of Advanced Checkout Flow",
+      "label": "Preview of Apple Pay Flow",
       "onAutoForward": "openPreview"
     }
   },
