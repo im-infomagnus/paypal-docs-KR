@@ -1,17 +1,17 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
   "name": "Apple Pay",
-  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/apple-pay/",
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/apple-pay-old",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "postAttachCommand": {
-    "Start server": "npx kill-port 8888 && npm start"
+    "Start server": "npx kill-port 8080 && npm start"
   },
   "forwardPorts": [
-    8888
+    8080
   ],
   "portsAttributes": {
-    "8888": {
+    "8080": {
       "label": "Preview of Apple Pay Flow",
       "onAutoForward": "openPreview"
     }
