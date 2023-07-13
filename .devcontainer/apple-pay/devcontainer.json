@@ -3,7 +3,7 @@
   "name": "Apple Pay",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/apple-pay",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm ci && npm cache clean --force && npm install",
   "postAttachCommand": {
     "Start server": "npx kill-port 8080 && npm start"
   },
