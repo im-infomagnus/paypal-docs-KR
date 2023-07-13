@@ -3,9 +3,9 @@
   "name": "Paying with Blik or Paypal on the web",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/blik/",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm install --ignore-scripts",
   "postAttachCommand": {
-    "Start server": "npx kill-port 8080 && npm run dev"
+    "Start server": "npx kill-port 8080 && npm start"
   },
   "forwardPorts": [
     8080
