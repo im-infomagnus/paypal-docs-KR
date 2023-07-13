@@ -11,7 +11,7 @@ const { requireHTTPS } = require("./middleware");
 
 const app = express();
 
-app.use(requireHTTPS);
+//app.use(requireHTTPS); //commented by Infomagnus in order to make it work on localhost
 app.use(express.json());
 app.use(express.static(resolve(__dirname, "../examples")));
 
@@ -161,7 +161,7 @@ app.post("/orders", async (req, res) => {
         Accept: "application/json",
         Authorization: `Bearer ${access_token}`,
       },
-      data: {...order}
+      data: { ...order }
     });
     res.json(data);
   } catch (err) {
