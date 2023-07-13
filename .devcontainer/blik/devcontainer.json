@@ -24,10 +24,6 @@
     "APP_SECRET": {
       "description": "Sandbox secret of the application.",
       "documentationUrl": "https://developer.paypal.com/api/rest/"
-    },
-    "WEBHOOK_ID": {
-      "description": "Webhook ID",
-      "documentationUrl": "https://developer.paypal.com/api/rest/"
     }
   },
   "customizations": {
