@@ -7,7 +7,7 @@ dotenv.config();
 
 const { getAccessToken } = require("./paypal");
 const { PORT, PAYPAL_API_BASE } = require("./config");
-const { requireHTTPS } = require("./middleware");
+//const { requireHTTPS } = require("./middleware");
 
 const app = express();
 
