@@ -11,7 +11,7 @@ const { requireHTTPS } = require("./middleware");
 
 const app = express();
 
-//app.use(requireHTTPS); //commented by Infomagnus in order to make it work on localhost
+//app.use(requireHTTPS); //commented by Kalpana in order to make it work on localhost
 app.use(express.json());
 app.use(express.static(resolve(__dirname, "../examples")));
 
