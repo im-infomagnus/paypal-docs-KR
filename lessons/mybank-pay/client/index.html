@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyBank Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <br />
+
+    <label>
+      <input
+        type="radio"
+        name="payment-option"
+        value="paypal"
+        id="paypal-radio"
+        checked
+      />
+      <span id="paypal-mark"></span>
+    </label>
+
+    <label>
+      <input
+        id="mybank-radio"
+        value="mybank"
+        name="payment-option"
+        type="radio"
+      />
+      <span id="mybank-mark"></span>
+    </label>
+
+    <div id="mybank-container"></div>
+
+    <div id="paypal-btn"></div>
+    <div id="mybank-btn"></div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,payment-fields,marks,funding-eligibility&enable-funding=mybank&currency=EUR"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
