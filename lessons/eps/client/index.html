@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EPS Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./styles.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+
+    <label>
+      <input
+        type="radio"
+        name="payment-option"
+        value="paypal"
+        id="paypal-radio"
+        checked
+      />
+      <span id="paypal-mark"></span>
+    </label>
+
+    <label>
+      <input
+        id="eps-radio"
+        value="eps"
+        name="payment-option"
+        type="radio"
+      />
+      <span id="eps-mark"></span>
+    </label>
+
+    <div id="eps-container"></div>
+
+    <div id="paypal-btn"></div>
+    <div id="eps-btn"></div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,payment-fields,marks,funding-eligibility&enable-funding=eps&currency=EUR"></script>
+    <script src="./index.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+
+  </body>
+</html>
