@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>P24 Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <label>
+      <input
+        type="radio"
+        name="payment-option"
+        value="paypal"
+        id="paypal-radio"
+        checked
+      />
+      <span id="paypal-mark"></span>
+    </label>
+
+    <label>
+      <input
+        id="p24-radio"
+        value="p24"
+        name="payment-option"
+        type="radio"
+      />
+      <span id="p24-mark"></span>
+    </label>
+
+    <div id="p24-container"></div>
+
+    <div id="paypal-btn"></div>
+    <div id="p24-btn"></div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,payment-fields,marks,funding-eligibility&enable-funding=p24&currency=EUR"></script>
+
+    <script src="./index.js"></script>
+
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+
+  </body>
+</html>
