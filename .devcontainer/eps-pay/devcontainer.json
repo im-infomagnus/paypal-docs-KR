@@ -1,7 +1,7 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
   "name": "EPS Pay",
-  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/apple-pay",
+  "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/eps",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm ci && npm cache clean --force && npm install",
   "postAttachCommand": {
