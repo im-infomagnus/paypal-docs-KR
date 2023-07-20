@@ -3,7 +3,7 @@
   "name": "IDEAL Pay",
   "workspaceFolder": "/workspaces/paypal-docs-KR/lessons/ideal-pay",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "postCreateCommand": "npm ci && npm cache clean --force && npm install",
+  "postCreateCommand": "npm install",
   "postAttachCommand": {
     "Start server": "npx kill-port 8080 && npm start"
   },
